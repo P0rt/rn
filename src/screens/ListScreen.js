@@ -4,7 +4,7 @@ import { Text, StyleSheet, View, FlatList } from 'react-native';
 const ListScreen = () => {
 
     const friends = [
-        {name: 'Friend 1', age: '20'},
+        {name: 'Friend 10', age: '20'},
         {name: 'Friend 2', age: '45'},
         {name: 'Friend 3', age: '32'},
         {name: 'Friend 4', age: '27'},
@@ -15,7 +15,7 @@ const ListScreen = () => {
     return (
         <FlatList 
             keyExtractor={friend => friend.name}
-            data={friends} 
+            data={friends}
             renderItem={({item}) => {
                 return (
                     <Text style={styles.text}>{item.name} - Age {item.age}</Text>

@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, StyleSheet, View } from 'react-native';
 
 const ComponentsScreen = () => {
-    const name = 'Kirill';
+    const name = 'Sergey';
     return (
         <View>
             <Text style={styles.textStyle}>Я начал шлепать на реакт нэйтив</Text>
