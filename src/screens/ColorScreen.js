@@ -9,7 +9,7 @@ const ColorScreen = () => {
             <Button title="Add a color" onPress={() => {
                 setColors([...colors, randomColor()]);
             }}/>
-            <FlatList 
+            <FlatList
                 keyExtractor={item => item}
                 data={colors}
                 renderItem={({item}) => {
