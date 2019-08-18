@@ -6,6 +6,7 @@ const [counter, setCounter] = useState(0);
 
     return (
         <View>
+            <Text style={styles.textStyle}>Current Count:{counter}</Text>
             <Button 
                 title="Increase"
                 onPress={() => {
@@ -18,11 +19,14 @@ const [counter, setCounter] = useState(0);
                     setCounter(counter - 1);
                 }}
             />
-            <Text>Current Count:{counter}</Text>
         </View>
     )
 }
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+    textStyle: {
+        fontSize: 50
+    }
+});
 
 export default CounterScreen;
