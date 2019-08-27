@@ -6,7 +6,7 @@ const TextScreen = () => {
 
     return (
         <View>
-            <Text style={styles.input}>Enter Password:</Text>
+            <Text style={styles.input}>Enter Password:</Text>   
             <TextInput 
                 style={styles.input} 
                 autoCapitalaize="none"
@@ -17,7 +17,7 @@ const TextScreen = () => {
             {
                 password.length < 4
                     ? <Text>Пароль должен быть больше пяти символов</Text> 
-                    : null
+                    : null  
             }
         </View>
     );

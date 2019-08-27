@@ -14,7 +14,7 @@ const ColorCounter = ({ color, onIncrease, onDecrease }) => {
                 title={`Decrease ${color}`}
             />
         </View>
-    )
+    );
 }
 
 const styles = StyleSheet.create({});
